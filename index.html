@@ -75,6 +75,18 @@
                 max-width: calc(100% - 10px);
             }
         }
+
+        .contact-info {
+            display: flex;
+            align-items: center; /* Center align vertically */
+            gap: 10px; /* Optional: Adds some space between the text and the icon */
+        }
+
+        /* Additional styling for the contact-info paragraph to remove margin */
+        .contact-info p {
+            margin: 0;
+        }
+
     </style>
 </head>
 <body>
@@ -82,10 +94,14 @@
 <div class="container">
     <h1>Sales Page</h1>
     <p>Pickup address: Prins Bernhardlaan, 1111EP, Diemen</p>
-    <p>Phone number: +31 06 1912-6536</p>
-    <a href="https://wa.me/310619126536" target="_blank">
-        <img src="https://lcarlini.github.io/sales-nl/images/zap.jpg" alt="Open chat on WhatsApp!" style="width: 40px; height: 40px;">
-    </a>    
+    <!-- Add this wrapper around your contact info -->
+    <div class="contact-info">
+        <p>Phone number: +31 06 1912-6536</p>
+        <a href="https://wa.me/310619126536" target="_blank">
+            <img src="https://lcarlini.github.io/sales-nl/images/zap.jpg" alt="Open chat on WhatsApp!" style="width: 40px; height: 40px;">
+        </a>
+    </div>
+
     <p>Note: I don't deliver.</p>
 
     <div class="product">
@@ -102,7 +118,21 @@
     <div class="product">
         <h2><b>Name:</b> IKEA Extendable table</h2>
         <p><b>Description:</b> EKEDALEN Extendable table, white, 80/120x70 cm</p>
-        <p style="color: red;"><b>Price:</b> € 100,00</p>
+        <p><b>Quantity:</b> 1</p>
+        <p style="color: red;"><b>Price:</b> € 100,00 per item</p>
+        <a style="display: none;" href="https://www.ikea.com/nl/nl/p/ekedalen-uitschuifbare-tafel-wit-70340826/">More information</a>
+        <div class="photos">
+            <img src="https://lcarlini.github.io/sales-nl/images/table-white/table1.jpeg" alt="IKEA table">
+            <img src="https://lcarlini.github.io/sales-nl/images/table-white/table2.jpeg" alt="IKEA table">
+            <img src="https://lcarlini.github.io/sales-nl/images/table-white/table3.jpeg" alt="IKEA table">
+        </div>
+    </div>
+
+    <div class="product">
+        <h2><b>Name:</b> IKEA Extendable table</h2>
+        <p><b>Description:</b> EKEDALEN Extendable table, white, 80/120x70 cm</p>
+        <p><b>Quantity:</b> 1</p>
+        <p style="color: red;"><b>Price:</b> € 100,00 per item</p>
         <a style="display: none;" href="https://www.ikea.com/nl/nl/p/ekedalen-uitschuifbare-tafel-wit-70340826/">More information</a>
         <div class="photos">
             <img src="https://lcarlini.github.io/sales-nl/images/table-white/table1.jpeg" alt="IKEA table">
